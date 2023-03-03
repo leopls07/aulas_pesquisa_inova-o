@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Primeira aula de CSS</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  
+  <style>
+    body{
+      margin: 2px;
+    }
+    .divPrimaria {
+      width: 500px;
+      height: fit-content;
+      background-color: rgb(192, 239, 249);
+      border-radius: 25px;
+      border: solid 2px #022419;
+      -webkit-box-shadow: 21px 23px 5px 0px rgba(159,231,245,1);
+      -moz-box-shadow: 21px 23px 5px 0px rgba(159,231,245,1);
+      box-shadow: 21px 23px 5px 0px rgb(111, 160, 170);
+      text-align: center;
+      padding: 5px;
+
+      position: absolute;
+      top: 33%; /* posiciona na metade da tela */
+      margin-top: -25px; /* e retrocede metade da altura */
+      left: 33%;
+    }
+    .boxImage {
+      margin-left: 50%;
+      width: 150px;
+      height: 150px;
+      background-color: #5840de;
+      border-radius: 50px;
+      border: solid 2px;
+      margin-left: 6px;
+      margin-top: 6px;
+      background-image: url("gato.png");
+      cursor: pointer ;
+    
+    }
+    h1{
+      font-family: monospace, sans-serif; 
+      font-size: 25px;
+    }
+
+
+  </style>
+
+  <body>
+    <div class="divPrimaria" >
+      <div class="boxImage ;" style="margin-left: 30%;" onclick="miau()" ></div>
+
+      <h1>
+        Meu nome é
+        <span style="color: red">Leonardo Bento</span>
+      </h1>
+
+      <p style="font-size: 18px">
+        <i>A vida tem de ser vivída pois após a vida não viveremos mais</i>
+      </p>
+    </div>
+  </body>
+</html>
+
+
+<script>
+
+function miau(){
+  alert('miau')
+}
+
+</script>
